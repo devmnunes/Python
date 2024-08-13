@@ -4,4 +4,4 @@ valor = float(input('Digite o valor do produto: '))
 desc = valor * 5/100
 nvalor = valor - desc
 
-print('O produto com o valor R${:1.0f} Reais, com o desconto de ficará R${} Reais.'.format(valor, nvalor))
+print('O produto com o valor R${:1.0f} Reais, com o desconto de ficará R${:1.0f} Reais.'.format(valor, nvalor))
