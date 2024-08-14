@@ -4,4 +4,4 @@ M = float(input('Digite o valor em metros:'))
 c = (M * 100)
 m = (M * 1000)
 
-print('O valor {}metros é igual a {:1.0f}cm e {:1.0f}mm'.format(M, c, m))
+print('O valor {:1.0f} metros é igual: \n {:1.0f}cm. \n {:1.0f}mm'.format(M, c, m))
