@@ -1,3 +1,3 @@
-cidade = input('Digite o nome de uma Cidade: ')
+cidade = str(input('Digite o nome de uma Cidade: ')).strip() 
     
-print('Santo'in cidade)
+print(cidade[:5].upper() == 'SANTO')
