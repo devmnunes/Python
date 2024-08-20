@@ -1,9 +1,11 @@
 import random
+from time import sleep
 
-n = [1, 2, 3, 4, 5]
-sorteado = random.choices(n)
-mnum = int(input('Em qual número eu estou pensando? '))
-if sorteado == mnum:
+sorteado = random.randint(0, 5)
+num = int(input('Em qual número eu estou pensando? '))
+print('PROCESSANDO...')
+sleep(2)
+if sorteado == num:
     print('O número escolhido foi {}, PARABÉNS VOCÊ ACERTOU'.format(sorteado))
 else:
-    print('O número escolhido foi {}, TENTE NOVAMENTE!'.format(sorteado))
+    print('O número escolhido foi {}, e não o {} , TENTE NOVAMENTE!'.format(sorteado, num))
