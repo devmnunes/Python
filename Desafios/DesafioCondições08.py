@@ -1,12 +1,10 @@
-r1 = float(input(' Primerira Reta: '))
-r2 = float(input(' Segunda Reta: '))
-r3 = float(input(' Terceira Reta: '))
+#CRIE UM PROGRAMA QUE LEIA TRÊS RETAS, E VEJA SE É POSSÍVEL FORMAR UM TRIÂNGULO.
 
-if r1 + r2 > r3 :
-    print('Os valores das retas {} , {} e {} , formam um triângulo. '.format(r1, r2, r3))
-elif r1 + r3 > r2:
-    print('Os valores das retas {} , {} e {} , formam um triângulo. '.format(r1, r2, r3))
-elif r2 + r3 > r1:
-    print('Os valores das retas {} , {} e {} , formam um triângulo. '.format(r1, r2, r3))
+a = float(input('Primerira Reta: '))
+b = float(input('Segunda Reta: '))
+c = float(input('Terceira Reta: '))
+
+if  a < b + c and b < a + c and c < a + b:
+    print('Com os valores {}, {} e {}, É POSSÍVEL formar um triângulo'.format(a, b, c))
 else:
-    print('Os valores {} , {} e {} , não formam um triângulo.'.format(r1, r2, r3))
+    print('Com os valores {}, {} e {}, NÃO É POSSÍVEL formar um triângulo'.format(a, b, c))
