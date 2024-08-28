@@ -5,8 +5,22 @@
 
 num = int(input('Digite um valor: '))
 
-print('[1] Binário')
-print('[2] Octal')
-print('[3] Hexadecimal')
 
-escolha = int(input('qual a base'(0, 3)))
+
+base = int(input('''qual a base de conversão:   
+                    
+        1 Decimal
+        2 Octal
+        3 Hexadecimal
+        
+        Qual sua escolha ? '''))
+    
+if base == 1:
+    print('O valor {} em Binário fica {}. '.format(num, bin(num))) 
+
+elif base == 2:
+    print('O valor {} em Octal fica {}. '.format(num, oct(num))) 
+
+elif base == 3:
+    print('O valor {} em Hexadecimal fica {}. '.format(num, hex(num))) 
+
