@@ -19,3 +19,5 @@ elif a != b != c:
 
 else:
     print('NÃO É POSSÍVEL formar um triângulo')
+
+    g
