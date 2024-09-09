@@ -1,41 +1,63 @@
 import random
+from time import sleep
+
+itens = ('Pedra', 'Papel', 'Tesoura' )
+
+computador = random.randint(1, 3)
 
 jogador =  int(input('''Vamos jogar Jokenpô:
                     
-       1 - Pedra
-       2 - Papel
-       3 - Tesoura
+    [1] PEDRA
+    [2] PAPEL
+    [3] TESOURA
         
     Qual sua escolha ? '''))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO')
 
-maquina = random.randint(1, 3)
 
-if jogador == 1 and maquina == 2:
-    print('Você escolheu PEDRA, e eu escolhi PAPEL, você PERDEU! ')
 
-elif jogador == 1 and maquina == 3:
-    print('Você escolheu PEDRA, e eu escolhi TESOURA, você GANHOU! ') 
+print('-=' * 13)
 
-elif jogador == 1 and maquina == 1:
-    print('EMPATE JOGAR NOVAMENTE!')
+print('Computador jogou {}'. format(itens[computador]))
 
-elif jogador == 2 and maquina == 1:
-    print('Você escolheu PAPEL, e eu escolhi PEDRA, você GANHOU! ')
+print('Jogador jogou {}'.format(itens[jogador]))
 
-elif jogador == 2 and maquina == 3:
-    print('Você escolheu PAPEL, e eu escolhi TESOURA, você PERDEU!')
+print('-=' * 13)
 
-elif jogador == 2 and maquina == 2:
-    print('EMPATE JOGAR NOVAMENTE!')
+if computador == 1: #Computador jogou Pedra
+    if jogador == 1:
+        print('EMPATE')
+    elif jogador == 2:
+        print('JOGADOR VENCE')
+    elif jogador == 3:
+         print('COMPUTADOR VENCE')
+    else:
+        print('JOGADA INVALIDA')
 
-elif jogador == 3 and maquina == 1:
-    print('Você escolheu TESOURA, e eu escolhi PEDRA, você PERDEU! ')
+elif computador == 2: #Computador jogou Papel
 
-elif jogador == 3 and maquina == 2:
-    print('Você escolheu TESOURA, e eu escolhi PAPEL, você GANHOU! ')
+    if jogador == 1:
+        print('COMPUTADOR VENCE')   
+    elif jogador == 2:
+        print('EMPATE')
+    elif jogador == 3:
+        print('JOGADOR VENCE')
+    else:
+        print('JOGADA INVALIDA')
+    
+elif computador == 3: #Computador jogou Tesoura
 
-elif jogador == 3 and maquina == 3:
-    print('EMPATE JOGAR NOVAMENTE!')
-
+    if jogador == 1:
+        print('JOGADOR VENCE')   
+    elif jogador == 2:
+        print('COMPUTADOR VENCE')
+    elif jogador == 3:
+        print('EMPATE')
 else:
-    print('Esse valor não é valido')
+        print('JOGADA INVALIDA')
+    
+

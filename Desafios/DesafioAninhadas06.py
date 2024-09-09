@@ -14,10 +14,10 @@ if a == b == c:
      print('O triângulo formado foi o  EQUILATERO, pois todos os lados são iguais '.format(a, b, c))
 elif a == b or a == c or c == b:
     print('O triângulo formado foi o  ISÓCELES, pois dois lados são iguais '.format(a, b, c))
-elif a != b != c:
+elif a != b != c != a:
     print('O triângulo formado foi o ESCALENO, pois todos os lados são diferentes'.format(a, b, c))
 
 else:
     print('NÃO É POSSÍVEL formar um triângulo')
 
-    g
+    
