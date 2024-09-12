@@ -2,9 +2,9 @@
 
 #CALCULE O VALOR DA PRESTAÇÃO MENSAL, SABENDO QUE ELA NÃO PODE EXEDER 30% DO SALÁRIO OU ENTÃO O EMPRÉSTIMO SERÁ NEGADO
 
-valor = int(input('Qual o valor do empréstimo: R$ '))
+valor = float(input('Qual o valor do empréstimo: R$ '))
 
-salario = int(input('Qual o valor do seu salário: R$ '))
+salario = float(input('Qual o valor do salário: R$ '))
 
 ano = int(input('Em quantos anos você ira pagar: '))
 
