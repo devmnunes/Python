@@ -10,8 +10,8 @@ for cont in range(1, 8):
     ano = int(input('Digite seu ano de nascimento: '))
     if atual - ano < 18:
         menor = menor + 1
-    else: atual - ano > 18
-    maior = maior + 1
+    else: 
+        maior = maior + 1
 print('{} pessoas ainda são de MENOR IDADE'.format(menor))
 print('{} pessoas já são de MAIORIDADE'.format(maior))
 

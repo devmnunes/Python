@@ -4,4 +4,4 @@ n = int(input('Digite um valor: '))
 if n % 1 == 0 and n % n == 0:
         print('O valor {} É PRIMO! '.format(n))
 else:
-    print('O valor {} É PRIMO. '.format(n))
+    print('O valor {} NÃO É PRIMO. '.format(n))
