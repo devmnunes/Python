@@ -3,6 +3,5 @@
 n = int(input('Digite um valor: '))
 print('A TABUADA DO VALOR {} É...'.format(n))
 for cont in range(1, 11): 
-    resultado = n * cont
-    print(n, 'x',  cont, '=', resultado)
+    print('{} x {} = {}'.format(n, cont, n*cont))  
 print('FIM!')

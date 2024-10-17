@@ -2,11 +2,8 @@
 
 soma = 0
 contador = 0
-
-for cont in range(1, 500+1):
-    if cont % 2 == 1: #Calcula os números ímpares
+for cont in range(1, 501, 2):
         if cont % 3 == 0: #Calcula os números ímpares multiplos de 3
-            soma = soma + contador
-            contador = contador + 1
-            print(cont)
+            contador += 1
+            soma += cont
 print('A soma de todos os {} valores é {} '.format(contador, soma))
