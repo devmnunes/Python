@@ -9,17 +9,17 @@ for cont in range(1,5):
 
     idade = int(input('Idade: '))
     
-    sexo = str(input('Sexo [M/F]: ').strip())
+    sexo = str(input('Sexo [M/F]: ').upper())
 
     totIdade = totIdade + idade #CONTADOR DE IDADE
     media = totIdade / cont #MÉDIA DE IDADE
 
-    if sexo == 'M': 
+    if sexo in 'M': 
         if idade > maisVelho:
             maisVelho = idade
             HomemVelho = nome
     
-    if sexo == 'F'and idade < 20:
+    if sexo in 'F'and idade < 20:
         mulher = mulher + 1
 
 print('A média de idade do grupo é {} anos. '.format(media))
