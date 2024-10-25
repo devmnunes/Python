@@ -1,13 +1,14 @@
 #FAÇA UM PROGRAMA QUE LEIA UM NÚMERO QUALQUER E MOSTRE O SEU FATORIAL.
 #EX: 5! = 5*4*3*2*1=120
 
-cont = 1
-fatorial = 1
 num = int(input('Digite um valor: '))
-
-while cont <= num:
-     fatorial *= cont
-     cont += 1
-
-print('O resultado da fatoração do valor {} é {}.'.format(num, fatorial))
+cont = num
+f = 1 
+print('Calculando {}! = '.format(num), end='')
+while cont > 0:
+    print('{}'.format(cont), end='')
+    print(' x ' if cont > 1 else ' = ', end='')
+    f *= cont
+    cont -= 1
+print(f, end='')
 
