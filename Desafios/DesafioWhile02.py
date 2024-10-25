@@ -1,16 +1,16 @@
 import random
-from time import sleep
-
+computador = random.randint(0, 10)
+acertou = False
 cont = 0
-num = int(input('Em qual numero eu estou pensando? '))
-print('PROCESSANDO...')
-sleep(2)
-sorteio = random.randint(1, 5)
-while not sorteio == num:
+while not acertou:
         cont += 1
-        sorteio = random.randint(1, 11)
-        print('O número escolhido foi {}, e não o {} , TENTE NOVAMENTE!'.format(sorteio, num))
-        num = int(input('Em qual numero eu estou pensando? '))
- 
-print('O numero escolhido foi {}, PARABÉNS VOCÊ ACERTOU, foram necessárias {} tentativas!!!'.format(sorteio, cont))
+        jogador = int(input('Em qual numero eu estou pensando? '))
+        print('Você errou, tente novamente!')
+        if jogador == computador:
+          acertou = True
+print('PARABÉNS VOCÊ ACERTOU, O NÚMERO ESCOLHIDO FOI {}, VOCÊ PRECISOU DE {} TENTATIVAS PARA ACERTAR.'.format(jogador, cont))
+        
+
+        
+
     
