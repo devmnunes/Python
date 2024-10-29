@@ -3,10 +3,10 @@
 cont = 1
 primeiro = int(input('Digite o Primeiro Termo: '))
 razão = int(input('Digite a Razão: '))
-décimo = primeiro + (10 - 1) * razão
-while not décimo:
-   
-   
-   print('{}'.format(cont), end='..')
+termo = primeiro
+while cont <= 10:
+   print('{} -> '.format(termo), end='')
+   termo = termo + razão
+   cont += 1
 print('ACABOU')
 
