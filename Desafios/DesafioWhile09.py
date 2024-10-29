@@ -1,23 +1,23 @@
-num = int(input('Digite um número: '))
-resp = str(input('Quer continuar: [S/N]')).strip().upper()
+num = int(input('Digite um valor: '))
+resp = str(input('Deseja continuar [S/N]: ')).upper().strip()
+cont = total = media = maior = menor = 0
 maior = num
 menor = num
-total = cont = media = 0
-while resp == 'S':
-    num = int(input('Digite um número: '))
+while resp not in 'N':
+    num = int(input('Digite um valor: '))
     cont += 1
-    total += num
+    total = total + num
+    resp = str(input('Deseja continuar [S/N]: ')).upper().strip()
+if resp == 'N':
+    cont += 1
+    total = total + num
+if cont == 1:
+        maior = menor = num
+else:
+    if num > maior:
+         maior = num
     if num < menor:
         menor = num
-    if num > maior:
-        maior = num
-    resp = str(input('Quer continuar: [S/N] ')).strip().upper()
-    if resp != 'NnMm':
-        print('Digite uma resposta valida!!!')
-        resp = str(input('Quer continuar: [S/N] ')).strip().upper()
-    if resp == 'N':
-        cont += 1
-        total += num
 media = total / cont
-print('Você digitou {} números e a média foi {}.'.format(cont, media))
-print('O maior valor foi {} e o menor foi {}.'.format(maior, menor))
+print('Você digitou {} números e a média deles é {}.'.format(cont, media))
+print('O maior número digitado foi {} e o menor foi {}.'.format(maior, menor))
