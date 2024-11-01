@@ -29,7 +29,6 @@ while True:
         print('VOCÊ PERDEU')
         break
     print('=-'*40)
-
 print(f'Você ganhou {vitoria} vezes.')
 
 
