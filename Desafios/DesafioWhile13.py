@@ -1,3 +1,8 @@
+#CRIE UM PROGRAMA QUE LEIA A IDADE E O SEXO DE VÁRIAS PESSOAS. A CADA PESSOA CADASTRADA, O PROGRAMA DEVERÁ PERGUNTAR SE O ÚSUARIO QUER OU NÃO CONTINUAR. NO FINAL, MOSTRE:
+#1 QUANTAS PESSOAS TEM MAIS DE 18 ANOS.
+#2 QUANTOS HOMENS FORAM CADASTRADOS
+#3 QUANTAS MULHERES TEM MENOS DE 20 ANOS.
+
 print('-'*25)
 print('   CADASTRE UMA PESSOA')
 print('-'*25)
@@ -16,7 +21,6 @@ while True:
     resp = str(input('Quer continuar? [S/N] ')).upper().strip()
     if resp == 'N':
         break
-    
 print(f'Total de pessoas com mais de 18 anos: {maior}.')
 print(f'Ao todo temos {homem} homens cadastrados.')
 print(f'E temos {mulher} mulheres com menos de 20 anos.')
