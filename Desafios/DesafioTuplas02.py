@@ -5,7 +5,6 @@
 #EM QUE POSIÇÃO NA TABELA ESTÁ O TIME CHAPECOENSE.
 
 times = ('São Paulo', 'Palmeiras', 'Santos', 'Vasco', 'Fluminense', 'Botafogo', 'Flamengo', 'Cruzeiro', 'Atletico Mineiro', 'Bahia', 'Vitória', 'Fortaleza', 'Internacional', 'Gremio', 'Atletico Paranaense', 'Ponte Preta', 'Chapecoense', 'Sporte', 'Curitiba', 'Corinthians')
-
 print('-='*45)
 print(f'Tabela Brasileirão 2024: {times}')
 print('-='*45)
@@ -15,3 +14,4 @@ print(f'Os 4 últimos são {times[16:]}')
 print('-='*45)
 print(f'Times em ordem alfabética: {sorted(times)}')
 print('-='*45)
+print(f' A Chapecoense está na {times.index('Chapecoense')}º posição')
