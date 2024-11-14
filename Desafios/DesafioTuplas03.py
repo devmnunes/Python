@@ -3,7 +3,7 @@
 #DEPOIS DISSO, MOSTREA LISTAGEM DE NÚMEROS GERADOS E TAMBÉM INDIQUE O MENOR E O MAIOR VALOR QUE ESTÃO NA TUPLA.
 
 from random import randint
-tupla = tuple(randint(n + 0, 20) for n in range (0, 5))
+tupla = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
 maior = max(tupla)
 menor = min(tupla)
 print(tupla)
