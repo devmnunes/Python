@@ -24,7 +24,7 @@ EX: IF 'PIZZA' IN LANCHE:
 #PARA CRIAR UMA LISTA ATRASVÉS DE RANGE.
 EX: VALORES = LIST(RANGE(4,11)) #ESSE COMANDO IRA CRIAR UMA LISTA COM OS VALORES DE 4 ATÉ 10.
 
-#PARA CPLOCAR UMA LISTA EM ORDEM NÚMÉRICA USE O COMANDO SORT().
+#PARA COLOCAR UMA LISTA EM ORDEM NÚMÉRICA USE O COMANDO SORT().
 EX: VALORES = [8,2,5,4,9,3,0]
     VALORES.SORT()
 #O NOVO VALOR DA LISTA SERÁ:
@@ -35,3 +35,36 @@ EX: VALORES = [8,2,5,4,9,3,0]
     VALORES.SORT(REVERSE=TRUE)
 #O NOVO VALOR DA LISTA SERÁ:
     VALORES = [9,8,5,4,3,2,0]
+
+#PARA CONTAR QUANTOS ELEMENTOS TEM NA LISTA USE O COMANDO LEN().
+EX: VALORES = [8,2,5,4,9,3,0]
+    LEN(VALORES)
+
+#PARA FAZER UMA LIGAÇÃO DE LISTA:
+EX: A = [1, 8, 5, 6]
+    B = A
+
+#PARA COPIAR UMA LISTA EM OUTRA:
+EX: A = [1, 8, 5, 6]
+    B = A[:]
+
+-----------------------------------------------------------------------------------------------------------------
+
+TESTE 1
+
+valores = []
+valores.append(5)
+valores.append(7)
+valores.append(9)
+valores.append(5)
+print(valores)
+
+for c, v in enumerate(valores):
+    print(f'Na posição {c} encontrei o valor {v}')
+
+TESTE 2
+
+valores = list()
+for cont in range (1, 6):
+    valores.append(int(input('Digite o {cont}º valor: ')))
+print(valores)
